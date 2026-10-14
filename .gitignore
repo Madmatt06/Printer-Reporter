@@ -1,0 +1,7 @@
+.DS_Store
+.venv
+/shelf/
+/workspace.xml
+.idea
+.env
+__pycache__
