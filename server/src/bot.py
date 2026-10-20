@@ -21,12 +21,12 @@ class BotClient:
 
 
   # Function Callbacks to allow external interaction with the discord bot
-  async def inform(self, user_id:int) -> bool:
+  async def inform(self, message:str) -> bool:
     logger.info('Sending message through discord bot')
     channel:discord.TextChannel = self.bot.get_channel(self.active_channel)
     if channel is not None:
       try:
-        await channel.send(content=f"<@{user_id}>")
+        await channel.send(content=f"{message}")
       except (discord.HTTPException, discord.Forbidden, discord.NotFound) as e:
         logger.error(f'Error sending message, got {e}')
         return False

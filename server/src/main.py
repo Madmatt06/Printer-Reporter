@@ -3,6 +3,14 @@ import api
 import bot
 import logging
 
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s [%(levelname)s] %(name)s: %(message)s',
+    datefmt='%Y-%m-%d %H:%M:%S',
+    filename='printer_manager_server.log',
+    filemode='a',
+    encoding='utf-8'
+)
 logger = logging.getLogger('printer_manager_server')
 async def main():
   logger.info('Starting Discord Bot')
