@@ -3,7 +3,7 @@ from typing import Optional
 
 @dataclass(slots=True)
 class Job:
-  id:str
+  id:bytes
   name:str
   start_time:int
   end_time:int

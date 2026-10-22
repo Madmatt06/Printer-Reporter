@@ -1,8 +1,13 @@
 from dataclasses import dataclass
+from typing import Optional
 
 @dataclass(slots=True)
 class Printer:
-  id:str
+  id:bytes
   name:str
-  image:bytes
-  status:int
+  image:Optional[bytes]
+  status:Optional[int]
+  ip:Optional[str]
+  username:Optional[str]
+  key:Optional[str]
+  api:Optional[str]
