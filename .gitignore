@@ -5,3 +5,6 @@
 .idea
 .env
 __pycache__
+*.drawio.bkp
+*.log
+

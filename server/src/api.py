@@ -25,13 +25,11 @@ class Server:
 
   #TODO: Finish handle connection to be able to execute commands and timeout.
   async def handle_connection(self, reader: asyncio.StreamReader, writer: asyncio.StreamWriter):
-    print("received connection request. reading...")
     ip, port = writer.get_extra_info('peername')[:2]
     logger.info(f'Client connected from ip: {ip}, port: {port}')
     received:bytes = await reader.readexactly(1)
     command_received:int = int.from_bytes(received, signed = False)
     if command_received == 1:
-      print("told to send. sending...")
       logger.info(f'{ip} : {port} sent "send". Sending message through discord')
       await self.test('Test')
     logger.info(f'Closing connection with {ip} : {port}')
