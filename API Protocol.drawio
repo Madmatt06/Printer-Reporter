@@ -1,6 +1,6 @@
 <mxfile host="Electron">
   <diagram name="Page-1" id="RuDYej0O2iIs6GblSLAN">
-    <mxGraphModel dx="1844" dy="759" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2144" dy="962" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -33,7 +33,7 @@
         <mxCell id="WhSPqOjkvlDtjaUZuxMk-9" edge="1" parent="1" source="WhSPqOjkvlDtjaUZuxMk-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="WhSPqOjkvlDtjaUZuxMk-8" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="WhSPqOjkvlDtjaUZuxMk-6" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="Check if discord bot&amp;nbsp; is connected or has encountered an error" vertex="1">
+        <mxCell id="WhSPqOjkvlDtjaUZuxMk-6" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="Check if discord bot&amp;nbsp; is connected or has encountered an error/ is misconfigured" vertex="1">
           <mxGeometry height="60" width="120" x="-110" y="680" as="geometry" />
         </mxCell>
         <mxCell id="WhSPqOjkvlDtjaUZuxMk-8" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="Respond with a single byte signifying bot is operational or specific error" vertex="1">

@@ -16,7 +16,7 @@ async def main():
   logger.info('Starting Discord Bot')
   discord_bot:bot.BotClient = bot.BotClient()
   logger.info('Starting api server')
-  server:api.Server = api.Server(discord_bot.inform)
+  server:api.Server = api.Server(discord_bot.inform, discord_bot.get_connection)
   await asyncio.gather(server.create_server(), discord_bot.start_bot())
 
 if __name__ == "__main__":

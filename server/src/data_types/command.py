@@ -1,12 +1,11 @@
 from enum import Enum
 
 class Request(Enum):
-  CONNECTION_CHECK = 0
-  GET = 1
-  ADD = 2
-  EDIT = 3
+  GET = 0
+  ADD = 1
+  EDIT = 2
 
 class DataType(Enum):
-  PRINTER = 0
-  JOB = 1
-
+  CONNECTION_CHECK = 0
+  PRINTER = 1
+  JOB = 2

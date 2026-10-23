@@ -33,6 +33,13 @@ class BotClient:
       return True
     return False
 
+  async def get_connection(self) -> int:
+    if self.active_channel is None:
+      return 1
+    if self.bot.is_closed():
+      return 2
+    return 0
+
   def setup_commands(self):
     @self.bot.tree.command(name="sync")
     async def sync(interaction: discord.Interaction):
