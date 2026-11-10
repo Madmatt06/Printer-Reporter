@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 from typing import Optional
+import Job
 
 @dataclass(slots=True)
 class Printer:
@@ -11,3 +12,4 @@ class Printer:
   username:Optional[str]
   key:Optional[str]
   api:Optional[str]
+  job:Optional[Job]
